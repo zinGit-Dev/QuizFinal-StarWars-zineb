@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>HTML5 Template</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="TheBridge">
+    <meta name="description" content="Plantilla simple HTML5">
+
+    <link rel="stylesheet" href="style.css">
+    <script defer src="scripts.js"></script>
+</head>
+
+<body>
+    <div class="containerAll">
+        <div class="container">
+            <div>
+                <h1>Quiz Star Wars</h1>
+            </div>
+            <div class="questionContainer">
+                <h4 class="colorQuestion">1/5 ¿En qué año se estrenó la primera película de la saga?</h4>
+                <div>
+                    <input id="addAnswer" type="radio" name="itemsAnswer1" value="1965">
+                    <label for="addAnswer">1965</label>
+                </div>
+                <div>
+                    <input id="addAnswer" type="radio" name="itemsAnswer1" value="1977">
+                    <label for="addAnswer">1977</label>
+                </div>
+            </div>
+            <div class="questionContainer">
+                <h4>2/5 ¿Cuál es la frase más famosa del personaje de Darth Vader?</h4>
+                <div>
+                    <input id="addAnswer" type="radio" name="itemsAnswer2" value="almirante">
+                    <label for="addAnswer">“Me ha fallado por última vez, almirante”</label>
+                </div>
+                <div>
+                    <input id="addAnswer" type="radio" name="itemsAnswer2" value="perturbadora">
+                    <label for="addAnswer">"Su falta de fe me resulta perturbadora”</label>
+                </div>
+            </div>
+            <div class="questionContainer">
+                <h4>3/5 ¿Cómo se llama el planeta de origen del maestro Yoda?</h4>
+                <div>
+                    <input id="addAnswer" type="radio" name="itemsAnswer3" value="Tatooine">
+                    <label for="addAnswer">"Tatooine"</label>
+                </div>
+                <div>
+                    <input id="addAnswer" type="radio" name="itemsAnswer3" value="Dagobah">
+                    <label for="addAnswer">"Dagobah"</label>
+                </div>
+            </div>
+            <div class="questionContainer">
+                <h4>4/5 Uno de estos robots no pertenece a la saga de Stars Wars. ¿Cuál?</h4>
+                <div>
+                    <input id="addAnswer" type="radio" name="itemsAnswer4" value="T-800">
+                    <label for="addAnswer">"T-800"</label>
+                </div>
+                <div>
+                    <input id="addAnswer" type="radio" name="itemsAnswer4" value="C-3P0">
+                    <label for="addAnswer">"C-3P0"</label>
+                </div>
+            </div>
+            <div class="questionContainer">
+                <h4>5/5 ¿Quiénes son los Sith?</h4>
+                <div>
+                    <input id="addAnswer" type="radio" name="itemsAnswer5" value="héroes">
+                    <label for="addAnswer">"Los héroes de Coruscant"</label>
+                </div>
+                <div>
+                    <input id="addAnswer" type="radio" name="itemsAnswer5" value="villanos">
+                    <label for="addAnswer">"Los principales villanos de Stars Wars"</label>
+                </div>
+            </div>
+
+            <div class="answersContainer">
+                <div>
+                    <button id="checkQuiz">¡Comprueba!</button>
+                </div>
+                <div>
+                    <p class="points">Tienes <span id="addPoints"> 0 </span> puntos</p>
+                </div>
+                <div class="answers">
+                    <p>La pregunta 1 es: <span id="resultAnswer1">¿?</span></p>
+                    <p>La pregunta 2 es: <span id="resultAnswer2">¿?</span></p>
+                    <p>La pregunta 3 es: <span id="resultAnswer3">¿?</span></p>
+                    <p>La pregunta 4 es: <span id="resultAnswer4">¿?</span></p>
+                    <p>La pregunta 5 es: <span id="resultAnswer5">¿?</span></p>
+                </div>
+                <div>
+                    <button id="fullReset">Reset Quiz</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

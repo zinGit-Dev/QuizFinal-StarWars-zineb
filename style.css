@@ -1,0 +1,105 @@
+
+:root{
+    --color-letra: #EEFCFB
+    /* --color-letra-preguntas: #001233 */
+}
+
+
+body{
+    background: url(./assets/starWarsBackgroun-1.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+     font-family: Arial, Helvetica, sans-serif;
+     color: var(--color-letra)
+  } 
+  h1{
+      display: flex;
+      text-align: center;
+  }
+.container {
+    display: flex;
+    justify-content: space-around;
+    column-count: 1;
+    flex-direction: column;
+    align-items:center;
+    gap: 5px; 
+}
+  .questionContainer{
+    display: flex;
+    flex-direction: column;
+    align-items:left;
+    justify-content: space-between;
+    width: 320px;
+    height: 150px;
+    margin: auto;
+    /* border: 0.5px solid  rgba(255,255,255,0.25) ;  */
+    border-radius: 20px;
+    padding: 5px;
+    opacity: 1;
+    background: linear-gradient(-45deg, rgba(0,0,0,0.22), rgba(255,255,255,0.25));
+    box-shadow: 
+    12px 12px 16px 0 rgba(255, 255, 255, 0.3) inset,
+    -8px -8px 12px 0 rgba(0, 0, 0, .25) inset;
+  }
+  
+  .answersContainer{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    /* justify-content: space-between;  */
+    margin: auto;
+    border-radius: 20px;
+    padding: 10px;
+    row-gap: 5px;
+  }
+  button{
+    background-color: #074588;
+    border: none;
+    width: 120px;
+    height: 25px;
+    border-radius: 5px;
+    box-shadow: 
+    12px 12px 16px 0 rgba(255, 255, 255, 0.3) inset,
+    -8px -8px 12px 0 rgba(0, 0, 0, .25) inset;
+  }
+  .answers{
+    width: 190px;
+    height: 170px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+    /* opacity: 1; */
+    /* background: linear-gradient(-45deg, rgba(0,0,0,0.22), rgba(255,255,255,0.25)); */
+    box-shadow: 
+    12px 12px 16px 0 rgba(255, 255, 255, 0.3) inset,
+    -8px -8px 12px 0 rgba(0, 0, 0, .25) inset;
+    background-color: #CCDFF5;
+    color: #010914;
+  }
+  .points{
+    text-align: center;
+    width: 150px;
+    height: 30px;
+    padding: 5px;
+    background-color: #CCDFF5;
+    color: #010914;
+    box-shadow: 
+    12px 12px 16px 0 rgba(255, 255, 255, 0.3) inset,
+    -8px -8px 12px 0 rgba(0, 0, 0, .25) inset;
+    border-radius: 10px;
+  }
+  @media only screen and (min-width: 768px){
+    .containerAll{
+        display: flex;
+        justify-content: flex-start;
+    }
+    }
+  @media only screen and (min-width: 1366px){
+    .containerAll{
+        display: flex;
+        justify-content: flex-start;
+    }
+  }
+  
